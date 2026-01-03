@@ -1,0 +1,68 @@
+
+git 
+---
+-> git init  -> invisible folder in current directory
+-> git add .  -> to move workdirectory files into staging area.
+-> git status -> to check the any changes happens or not
+-> git commit -m 'msg' -> write any message to the changes
+-> git log -> to show all commits or changes
+-> git show -> it display recent commit 
+-> git show hashcode -> it return commits code .
+-> git config --global user.name -> check your user name
+-> git config --global user.email -> check your user email
+
+# change usernames and email and system functions
+
+-> git config --global user.name '<name>' 
+-> git config --global user.name '<email>' 
+
+
+github
+-------
+git remote -v -> it display profile user name of github accont (push /pull)
+
+git branch -> check the where the files are get reay to store. 
+
+git checkout <branch-name> -> change the branch name
+
+git remote set-url origin <github repo url>
+
+git push 
+--------
+git push origin <branch name> (ex:master,main,...) -> data move from local repo to github branch
+
+git push -u origin <branch name> (ex:master,main,...)
+
+
+git pull
+--------
+git pull origin <branch name> (ex:master,main,...) -> data move from github branch to local repo
+
+git clone
+----------
+git clone <github url path>
+
+git clone https:@profile//path  ->clone data with permission from the admin.
+
+
+auser auth token
+----------------
+-> open github settings -> scroll down bottom check developer settings -> open personal access token -> generate new token. 
+
+-> this token hold the user name and password with expire date .
+-> this token work with like as grant and revoke
+-> insted of pass user name and password , this token is the better to send your clients with permission and token link time duration.
+
+.gitognore
+-----------
+-> Keeps repositories clean: Prevents clutter from machine-generated files like build artifacts (.o, .pyc files), log files (*.log), and dependency folders (node_modules/).
+-> Ensures security: Avoids accidentally committing sensitive data, such as API keys or personal configuration files, to a public repository.
+
+
+how to delete repo in github
+-----------------------------
+step 1: open repo in github
+step 2: click settings in repo
+step 3: scroll down to Danger Zone
+step 4: click delete repo
+step 5: then it open pop box and then give the repo address there then only delete
